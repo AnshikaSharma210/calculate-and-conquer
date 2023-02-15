@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate & Conquer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <center>
+        <div class="whole">
+            <h1>Calculate & Conquer</h1>
+    <table id="calc">
+          <tr id="row1" class="rows">
+            <td colspan="4"> <input class="result-area" type="text" id="result" disabled autofocus /> </td>
+          </tr>
+        <tr id="row2" class="rows">
+            <td ><input class="btn number" type="button" value="1" onclick="disp('1')"/></td>
+            <td ><input class="btn number" type="button" value="2" onclick="disp('2')"/></td>
+            <td ><input class="btn number" type="button" value="3" onclick="disp('3')"/></td>
+            <td > <input class="btn spcl"  type="button" value="AC" onclick="clr()" id="btn" /> </td>
+        </tr>
+        <tr id="row3" class="rows">
+            <td ><input class="btn number" type="button" value="4" onclick="disp('4')"/></td>
+            <td ><input class="btn number" type="button" value="5" onclick="disp('5')"/></td>
+            <td ><input class="btn number" type="button" value="6" onclick="disp('6')"/></td>
+            <td ><input class="btn symbol" type="button" value="+" onclick="disp('+')"/></td>
+        </tr>
+        <tr id="row4" class="rows">
+            <td ><input class="btn number" type="button" value="7" onclick="disp('7')"/></td>
+            <td ><input class="btn number" type="button" value="8" onclick="disp('8')"/></td>
+            <td ><input class="btn number" type="button" value="9" onclick="disp('9')"/></td>
+            <td ><input class="btn symbol" type="button" value="-" onclick="disp('-')"/></td>
+        </tr>
+        <tr id="row5" class="rows">
+            <td colspan="2"><input class="btn number" id="zero" type="button" value="0" onclick="disp('0')"/></td>
+            <td ><input class="btn number" type="button" value="." onclick="disp('.')"/></td>
+            <td ><input class="btn symbol" type="button" value="x" onclick="disp('*')"/></td>
+        </tr>
+        <tr id="row6" class="rows">
+            <td colspan="2"><input class="btn symbol" id="equal" type="button" value="=" onclick="calc()"/></td>
+            <td ><input class="btn spcl" id="back" type="button" value="" onclick="back()"/></td>
+            <td ><input class="btn symbol" type="button" value="/" onclick="disp('/')"/></td>
+        </tr>
+    </table>
+</div>
+</center>
+<script src="main.js"></script>
+</body>
+
+</html>
